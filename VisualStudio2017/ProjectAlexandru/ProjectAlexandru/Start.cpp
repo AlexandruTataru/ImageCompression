@@ -14,7 +14,11 @@ int main()
 	Mat sampleImage3 = imread("..\\..\\..\\Sample3.bmp");
 
 	Mat smallSample = imread("..\\..\\..\\SmallSample.bmp");
-	Utils::validate(sampleImage1, Algo::uncompress(Algo::compress(sampleImage1)));
+	Utils::validate(smallSample, Algo::uncompress(Algo::compress(smallSample)));
+
+	//namedWindow("Display window", WINDOW_NORMAL);
+	//imshow("Display window", Algo::uncompress(Algo::compress(smallSample)));
+	//waitKey(0);
 
 	getchar();
 	return 0;
