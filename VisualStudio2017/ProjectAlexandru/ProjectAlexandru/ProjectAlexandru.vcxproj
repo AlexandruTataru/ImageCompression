@@ -147,6 +147,17 @@
     <ClInclude Include="Algo.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Sample1.bmp">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\Sample2.bmp" />
+    <Image Include="..\..\..\Sample3.bmp" />
+    <Image Include="..\..\..\SmallSample.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
